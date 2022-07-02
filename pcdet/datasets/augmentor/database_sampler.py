@@ -9,7 +9,7 @@ import torch.distributed as dist
 from ...ops.iou3d_nms import iou3d_nms_utils
 from ...utils import box_utils, common_utils
 
-
+#db sampler 进行数据增强
 class DataBaseSampler(object):
     def __init__(self, root_path, sampler_cfg, class_names, logger=None):
         self.root_path = root_path
